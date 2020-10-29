@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector(".video__start-circle"),l=document.querySelector(".video__start-triangle"),t=document.querySelector(".iframe__video");t.style.display="none",e.onclick=function(){t.style.display="block",e.style.display="none",l.style.display="none"},l.onclick=function(){t.style.display="block",e.style.display="none",l.style.display="none"}})();

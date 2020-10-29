@@ -47,7 +47,7 @@ html {
     margin: 0 auto;
 }
 
-/* Header styles */
+/* Header styles start*/
 
 .header { 
     max-width: 1280px;
@@ -122,10 +122,10 @@ html {
     margin-left: 12px;  
 }
 
-/* Header styles */
+/* Header styles end */
 
 
-/* Intro Page */
+/* Intro Page start */
 
 .intro {
     width: 1280px;
@@ -198,9 +198,11 @@ html {
     float: right;
 }
 
-/* Intro Page */
+/* Intro Page end */
 
-/* Description Page */
+/* Description Page start */
+
+/* Statistic start*/
 
 .description {
     width: 1280px;
@@ -356,6 +358,9 @@ html {
     margin-top: 0;
 }
 
+/* Statistic end*/
+
+/* Benefits grid start*/
 
 .benefits {
     width: 1089px;
@@ -411,4 +416,187 @@ html {
 
 .benefits__item-short-details {
     padding-right: 30px;
+}
+
+/* Benefits grid end */
+
+/* Description Page end */
+
+/* Quote */
+
+.quote__block {
+    width: inherit;
+    height: 400px;
+    background: url(../img/quote-background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.quote__text {
+    width: 715px;
+    height: 138px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 46px;
+    color: white;
+    position: absolute;
+    top: 101px;
+    left: 129px;
+    margin: 0;
+    letter-spacing: 0.04em;
+    padding-right: 15px;
+}
+
+
+
+.quote__author {
+    width: 500px;
+    height: 20px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color:white;
+    position: absolute;
+    top: 279px;
+    left: 129px;
+    margin: 0;
+    letter-spacing: 0.08em;
+}
+
+
+.quote__icon {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+/* Quote end */
+
+/* Video start */
+
+.video {
+    width: 1280px;
+    height: 974px;
+    margin: 0 auto;
+    padding-top: 121px;
+}
+
+.video__border {
+    width: 900px;
+    height: 552px;
+    border: 1px solid #e4e4e4;  
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 25px 60px 25px 28px;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.video__inside-border {
+    width: 812px;
+    height: 502px;
+}
+
+.iframe__video {
+    display: none;
+}
+
+
+.video__inside-border {
+    background: url(../img/screensaver-video.jpg);
+}
+
+.video__start-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #586291;
+    opacity: 0.3;
+    position: absolute;
+    top:  216px;
+    left: 390px;
+}
+
+.video__start-triangle {
+    position: absolute;
+    top: 257px;
+    left: 436px;
+}
+
+.video__border-small-circle {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #e4e4e4;  
+    border-radius: 50%;
+    position: absolute;
+    top: 270px;
+    left: 8px;
+}
+
+.video__border-large-circle {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #e4e4e4;  
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    right: 14px;
+}
+
+.video__description {
+    width: 827px;
+    height: 126px;
+    margin-left: 191px;
+}
+
+.video__description-heading {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: #262A3F;
+    margin-bottom: 20px;
+}
+
+.video__description-italic {
+    font-style: italic;
+    color: #85BBB1;
+}
+
+.video__description-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262A3F;
+}
+
+.features {
+    width: 1280px;
+    height: 691px;
+    background: teal;
+    margin: 0 auto;
+    position: relative;
+}
+
+.features__dark-block {
+    width: 566px;
+    height: 540px;
+    background: url(../img/features-background-image.jpg);
+    background-size: cover;
+}
+
+.features__grid {
+    width: 762px;
+    height: 452px;
+    background: salmon;
+    position: absolute;
+    top: 44px;
+    left: 455px;
 }
