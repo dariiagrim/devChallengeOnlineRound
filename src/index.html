@@ -7,7 +7,6 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__background"></div>
         <div class="wrapper">
             <div class="header__wrapper">
                 <div class="header__logos">
@@ -41,12 +40,13 @@
                     </ul>
                 </nav>
                 <div class="header__dark">
-                    <a href="#!" class="header__dark-link">
+                    <div class="header__dark-link">
                         <div class="header__dark-rectangle">
                             <img src="img/svg/moon-icon.svg" alt="Dark Mode" class="header__dark-pic">
                         </div>
-                    </a>
+                    </div>
                 </div>
+                <div class="header__background"></div>
             </div>
         </div>
     </header>
@@ -155,9 +155,11 @@
             <div class="video__border">
                 <div class="video__border-small-circle"></div>
                 <div class="video__inside-border">
-                    <iframe width="812px" height="502px" src="https://www.youtube.com/embed/vnbN9V_2Guk" frameborder="0"  allowfullscreen class="iframe__video"></iframe>
+                    <iframe width="812" height="502" src="https://www.youtube.com/embed/vnbN9V_2Guk" allowfullscreen class="iframe__video"></iframe>
                     <div class="video__start-circle"></div>
-                    <img src="./img/svg/triangle.svg" alt="start video" class="video__start-triangle">
+                    <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="video__start-triangle">
+                        <path d="M32.3175 16.615C33.0301 16.9898 33.0301 18.0102 32.3175 18.385L1.71555 34.4826C1.04965 34.8329 0.249998 34.35 0.249998 33.5976L0.25 1.40242C0.25 0.650009 1.04965 0.167116 1.71555 0.517401L32.3175 16.615Z"/>
+                        </svg>
                 </div>
                 <div class="video__border-large-circle"></div>
             </div>
@@ -275,19 +277,18 @@
                     </div>
                     <div class="features__grid-item">
                         <a href="" class="features__grid-link">join now<div class="features__grid-link-shadow"></div></a>
+                        <div class="features__join-border"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="slider">
+        <section class="slider">    
             <div class="wrapper">
                 <div class="slider__text">
                     <h2 class="reviews-heading">Client  <span class="reviews-italic">reviews</span></h2>
                     <p class="reviews-description">Happy clients, happy us. Read our client reviews about the work process and results.</p>
                 </div>
                 <p class="slider__counter"> <span class="slider__review-number">1/</span> 4</p>
-                    
-                    
                 </div>
                 <div class="glide__wrapper">
                     <div class="glide">
@@ -347,14 +348,61 @@
                             </li>
                         </ul>
                         </div>
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./img/svg/arrowleftslider.svg" alt="left arrow" class="slider__left-arrow"></button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./img/svg/sliderarrowright.svg" alt="right arrow" class="slider__right-arrow"></button>
-                    </div> 
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <svg width="48" height="12" viewBox="0 0 48 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path  fill-rule="evenodd" clip-rule="evenodd" d="M10 11.7734L0 5.99993L10 0.226432V4.99993L48 4.99993V6.99993L10 6.99993V11.7734Z" class="arrow__disabled slider__left-arrow"/>
+                                </svg>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <svg width="48" height="12" viewBox="0 0 48 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M38 0.226569L48 6.00007L38 11.7736L38 7.00007L-1.18432e-06 7.00007L-8.34626e-07 5.00007L38 5.00007L38 0.226569Z" class="arrow__enabled slider__right-arrow"/>
+                                </svg>
+                            </button>
+                        </div> 
                     </div>  
                 </div>               
             </div>
         </section>
+        <section class="contact">
+            <div class="wrapper">
+                <div class="contact__block">
+                    <div class="contact__border-line"></div>
+                    <div class="contact__grid">
+                        <div class="contact__grid-item">
+                            <h2 class="contact__heading">
+                                Contact <span class="contact__italic"> our sales team</span>
+                            </h2>
+                            <p class="contact__paragraph">
+                                Our team is happy to answer your sales questions. <br> Fill out the form and we’ll be in touch as soon as possible.
+                            </p>
+                        </div>
+                        <div class="contact__grid-item">
+                            <div class="contact__form">
+                                <input type="text" class="contact__name input-element" placeholder="Your name">
+                                <input type="text" class="contact__email input-element" placeholder="Email">
+                                <input type="text" class="contact__more input-element" placeholder="Tell more">
+                                <input type="submit" class="contact__submit input-element" value="send request">
+                                <div class="contact__submit-shadow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <p class="footer__copyright">&copy; 2020 Solisgroup. All Rights Reserved.</p>
+            <div class="footer__made-by-who">
+                <p class="footer__made-by">made by</p>
+                <p class="footer__who">Zgraya.digital</p>
+            </div>
+            <div class="footer__agreement-policy">
+                <a href="#!" class="footer__agreement">User Agreement</a>
+                <a href="#!" class="footer__policy">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
