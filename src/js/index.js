@@ -105,4 +105,20 @@ darkMode.onclick = function() {
 
 
 
+const nav = document.querySelector('.header')
+console.log(nav)
+window.addEventListener('scroll', onScroll)
+let prevY = pageYOffset
+function onScroll() {
+    console.log(pageYOffset)
+    if (pageYOffset > prevY && pageYOffset > 100) {
+        nav.style.top = '-150px'
+        prevY = pageYOffset
+        
+    } else {
+        nav.style.top = '0'
+        prevY = pageYOffset
+    }
+}   // navigation-bar
+
 

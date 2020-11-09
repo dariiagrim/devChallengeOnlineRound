@@ -82,6 +82,10 @@ body.theme-is-black {
     color: var(--main-color)
 }
 
+a:hover {
+    color: var(--italic-color)
+}
+
 .italic {
     font-style: italic;
     color: var(--italic-color);
@@ -156,6 +160,9 @@ body.theme-is-black {
 .header__dark {
     z-index: 10000;
     cursor: pointer;
+    position: fixed;
+    top: 50px;
+    right: 0;
 }
 
 .header__dark-rectangle {
@@ -517,6 +524,9 @@ body.theme-is-black {
     position: absolute;
     top: 70px;
     left: 70px;
+    position: sticky;
+    top: 500px;
+    right: 0;
 }
 
 /* Quote end */
@@ -564,6 +574,12 @@ body.theme-is-black {
     position: absolute;
     top:  216px;
     left: 390px;
+    transition-delay: 0.5s;
+}
+
+.video__start-circle:hover {
+    opacity: 0.5;
+    background: var(--italic-color);
 }
 
 .video__start-triangle {
@@ -586,6 +602,7 @@ body.theme-is-black {
     left: 8px;
 }
 
+
 .video__border-large-circle {
     width: 32px;
     height: 32px;
@@ -595,6 +612,8 @@ body.theme-is-black {
     top: 260px;
     right: 14px;
 }
+
+
 
 .video__description {
     width: 827px;
