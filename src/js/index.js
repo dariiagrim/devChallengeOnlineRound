@@ -51,7 +51,6 @@ rightArrow.onclick = function() {
     leftArrow.disabled = false
     leftArrowSvg.classList.add("arrow__enabled")
     leftArrowSvg.classList.remove("arrow__disabled")
-    console.log(counter.innerHTML[0])
     let number = Number(counter.innerHTML[0])
     number += 1
     if (number === 4) {
@@ -72,7 +71,6 @@ leftArrow.onclick = function() {
     rightArrow.disabled = false
     rightArrowSvg.classList.add("arrow__enabled")
     rightArrowSvg.classList.remove("arrow__disabled")
-    console.log(counter.innerHTML[0])
     let number = Number(counter.innerHTML[0])
     
     number -= 1
@@ -88,11 +86,6 @@ leftArrow.onclick = function() {
 
 
 const darkMode = document.querySelector('.header__dark')
-console.log(darkMode)
-
-window.addEventListener('click', function(event) {
-    console.log(event.target)
-})
 
 let dark = false
 const quoteIcon = document.querySelector('.quote__icon')
