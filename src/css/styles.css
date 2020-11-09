@@ -1340,23 +1340,84 @@ body.theme-is-black {
     .header__item {
       margin-right: 10px;
     }
+
+    
     .wrapper {
         margin-left: 20px;
     }
+    
+    .description__statistic-image {
+        margin-left: 5vw;
+    }
+    
     .description__statistic-text {
         left: 30vw;
-        flex-direction: column;
+        flex-direction: column; 
         padding: auto;
-        width: 560px;
+        width: 640px;
         height: 680px;
     }
-    /* .description__statistic-info-paragraphs {
+    .description__statistic-info-paragraphs {
         display: none;
-    } */
+    }
 
     .description__statistic-info-link {
         margin-top: 5%;
         margin-left: 20vw;
     }
+
+    .benefits {
+        grid-template-columns: repeat(1, 1fr);
+    }
    
+    .description {
+        height: 2000px;
+    }
+
+    .quote__text {
+        width: 480px;
+        font-size: 24px;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .quote__block {
+        margin-bottom: 100px;
+        margin-left: 3vw;
+        width: 90vw;
+    }
+
+    .features__grid {
+        display: none;
+    }
+
+    .features__dark-block {
+        margin-left: 10vw;
+    }
+
+    
+    .contact__grid {
+        grid-template-columns: repeat(2, 300px);
+    }
+    .footer__copyright {
+        margin-right: 5vw;
+    }
+
+    .footer__made-by-who {
+        margin-right: 5vw;
+    }
+
+    .intro__title {
+        margin-left: 10vw;
+    }
+
+    .intro__after-title {
+        margin-left: 10vw;
+    }
+
+    .intro__join-link {
+        margin-left: 10vw;
+    }
   }
